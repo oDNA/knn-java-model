@@ -45,7 +45,9 @@ The `calculateDistance` method computes the Euclidean distance between two point
 public static double calculateDistance(double[] point1, double[] point2);
 ```
 - **Key Formula:**
-   \[ \text{Distance} = \sqrt{\sum_{i=1}^{n}(x_i - y_i)^2} \]
+   ```
+   Distance = sqrt(Σ(x_i - y_i)^2)
+   ```
 
 #### **c. Classifying a Test Point**
 The `classify` method:
@@ -61,7 +63,7 @@ public static String classify(List<DataPoint> dataPoints, double[] testPoint, in
 ### 3. Testing and Debugging
 
 #### **Sample Dataset**
-A sample dataset `fruits_data.csv` was created, containing features like size, weight, and color index for different fruits (e.g., Apple, Banana, Cherry).
+A sample dataset `fruits_data.csv` was created, containing unnamed features for fruits. They are used as placeholders for actual attributes such as size, sweetness, etc.
 
 #### **Test Cases**
 Various test points were run through the model to verify:
@@ -71,7 +73,6 @@ Various test points were run through the model to verify:
 
 ### 4. Enhancing Usability
 The project includes:
-- Customizable `k` values to experiment with different numbers of neighbors.
 - Clear error messages for invalid inputs or file issues.
 - Modularity to allow future enhancements, such as additional distance metrics.
 
